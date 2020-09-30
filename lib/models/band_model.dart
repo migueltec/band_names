@@ -11,9 +11,9 @@ class Band{
 
     factory Band.fromMap( Map<String, dynamic> json){
         return Band(
-            id: json['id'],
-            name: json['name'],
-            votes: json['votes']
+            id: json['id'] ?? 'no-id',
+            name: json['name'] ?? 'no-name',
+            votes: json['votes'] ??'no-votes'
         );
     }
 }
